@@ -32,3 +32,7 @@ services:
       - "traefik.http.routers.nextcloud.entrypoints=websecure"
       - "traefik.http.routers.nextcloud.tls=true"
       - "traefik.http.routers.nextcloud.tls.certresolver=le"
+    networks:
+      default:
+        external:
+          name: common-network
