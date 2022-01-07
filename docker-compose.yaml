@@ -7,7 +7,7 @@ services:
     volumes:
       - "${DATA_DIR}/mysql:/var/lib/mysql"
     environment: 
-      MYSQL_PWD: ${MYSQL_PASS}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASS}
 
   nextcloud:
     image: nextcloud:${NEXTCLOUD_VERSION}
